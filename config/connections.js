@@ -68,6 +68,11 @@ module.exports.connections = {
     database: 'socialpostr'
   },
 
+  productionDb: {
+    adapter: 'sails-mongo',
+    host: process.env.MONGOLAB_URI,
+  }
+
   /***************************************************************************
   *                                                                          *
   * PostgreSQL is another officially supported relational database.          *

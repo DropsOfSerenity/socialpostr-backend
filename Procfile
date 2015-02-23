@@ -1,1 +1,1 @@
-web: sails lift --prod
+web: NODE_ENV=production node app.js

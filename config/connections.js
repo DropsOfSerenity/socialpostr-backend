@@ -70,7 +70,7 @@ module.exports.connections = {
 
   productionDb: {
     adapter: 'sails-mongo',
-    host: process.env.DB_URL,
+    url: process.env.DB_URL,
     schema: true
   },
 

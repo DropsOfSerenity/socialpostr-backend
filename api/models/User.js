@@ -16,6 +16,14 @@ module.exports = {
     displayName: 'string',
     twitter: 'string',
     twitterToken: 'string',
-    twitterSecret: 'string'
+    twitterSecret: 'string',
+    twitterAutoReplyMessage: {
+      type: 'string',
+      defaultsTo: 'Thanks for Following!'
+    },
+    twitterAutoReplyEnabled: {
+      type: 'boolean',
+      defaultsTo: false
+    }
   }
 };

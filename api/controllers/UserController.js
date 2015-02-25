@@ -11,6 +11,12 @@ var jwt = require('jwt-simple');
 var moment = require('moment');
 
 module.exports = {
+  me: function(req, res) {
+    // given a authenticated user, send them their data.
+    User.findOne(req.userId, function(err, user) {
+      res.json(user);
+    });
+  },
   login: function(req, res) {
     var requestTokenUrl = 'https://api.twitter.com/oauth/request_token';
     var accessTokenUrl = 'https://api.twitter.com/oauth/access_token';

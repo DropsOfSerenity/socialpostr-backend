@@ -61,13 +61,12 @@ module.exports.connections = {
   ***************************************************************************/
   mongo: {
     adapter: 'sails-mongo',
-    url: process.env.MONGOLAB_URI,
-    schema: true
-    // host: 'localhost',
-    // port: 27017,
-    // user: '',
-    // password: '',
-    // database: 'socialpostr'
+    schema: true,
+    host: 'localhost',
+    port: 27017,
+    user: '',
+    password: '',
+    database: 'socialpostr'
   },
 
   prodmongo: {

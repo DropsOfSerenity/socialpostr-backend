@@ -29,7 +29,9 @@ module.exports.policies = {
   '*': false,
 
   UserController: {
-    login: true
+    login: true,
+    me: ['jwtAuth'],
+    update: ['jwtAuth', 'isUser']
   },
 
   PostController: {
